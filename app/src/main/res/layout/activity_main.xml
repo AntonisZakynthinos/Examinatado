@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
-    tools:context=".ui.main.MainActivity">
+    android:background="@drawable/gradient_background">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -18,38 +17,54 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.019"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_menu_button" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="255dp"
+            android:layout_height="83dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="15dp"
+            android:text="Examinatado"
+            android:textAlignment="center"
+            android:textColor="#494747"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.212"
+            app:layout_constraintStart_toEndOf="@+id/imageButton3"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="255dp"
-        android:layout_height="83dp"
-        android:fontFamily="sans-serif-medium"
-        android:paddingTop="15dp"
-        android:text="Examinatado"
-        android:textAlignment="center"
-        android:textColor="#494747"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        app:layout_anchor="@+id/appBarLayout"
-        app:layout_anchorGravity="top|center" />
-
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="150dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="150dp">
+            android:layout_height="wrap_content">
+
+
             <ImageButton
                 android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="421dp"
+                android:layout_height="match_parent"
                 android:background="#000000FF"
                 android:src="@drawable/ic_brain"
                 tools:layout_editor_absoluteX="0dp"
                 tools:layout_editor_absoluteY="151dp" />
+
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -59,6 +74,7 @@
                 app:layout_anchorGravity="center"
                 tools:layout_editor_absoluteX="0dp"
                 tools:layout_editor_absoluteY="151dp" />
+
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -68,6 +84,7 @@
                 app:layout_anchorGravity="center"
                 tools:layout_editor_absoluteX="0dp"
                 tools:layout_editor_absoluteY="151dp" />
+
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -77,6 +94,7 @@
                 app:layout_anchorGravity="center"
                 tools:layout_editor_absoluteX="0dp"
                 tools:layout_editor_absoluteY="151dp" />
+
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -86,6 +104,7 @@
                 app:layout_anchorGravity="center"
                 tools:layout_editor_absoluteX="0dp"
                 tools:layout_editor_absoluteY="151dp" />
+
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -97,6 +116,6 @@
                 tools:layout_editor_absoluteY="151dp" />
         </LinearLayout>
 
-    </ScrollView>
+    </HorizontalScrollView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
