@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".ui.main.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Examinatado.AppBarOverlay" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clFirst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="255dp"
+        android:layout_height="83dp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="15dp"
+        android:text="Examinatado"
+        android:textAlignment="center"
+        android:textColor="#494747"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_anchor="@+id/appBarLayout"
+        app:layout_anchorGravity="top|center" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="150dp">
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000000FF"
+                android:src="@drawable/ic_brain"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="151dp" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000000FF"
+                android:src="@drawable/ic_colon"
+                app:layout_anchor="@+id/imageButton"
+                app:layout_anchorGravity="center"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="151dp" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000000FF"
+                android:src="@drawable/ic_heart"
+                app:layout_anchor="@+id/imageButton"
+                app:layout_anchorGravity="center"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="151dp" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000000FF"
+                android:src="@drawable/ic_liver"
+                app:layout_anchor="@+id/imageButton"
+                app:layout_anchorGravity="center"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="151dp" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000000FF"
+                android:src="@drawable/ic_lungs"
+                app:layout_anchor="@+id/imageButton"
+                app:layout_anchorGravity="center"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="151dp" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000000FF"
+                android:src="@drawable/ic_small_intestine"
+                app:layout_anchor="@+id/imageButton"
+                app:layout_anchorGravity="center"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="151dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
