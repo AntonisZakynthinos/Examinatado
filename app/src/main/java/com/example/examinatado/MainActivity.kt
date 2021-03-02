@@ -10,14 +10,15 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
-   // var scanButton = findViewById(R.id.scanButton) as Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        //scanButton.setOnClickListener {
-          //  val intent = Intent("android.media.action.IMAGE_CAPTURE")
-           //startActivity(intent)
-        //}
+        findViewById<Button>(R.id.scanButton).setOnClickListener {
+
+            val i = Intent(applicationContext, ScanActivity::class.java)
+            startActivity(i)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -35,5 +36,6 @@ class MainActivity : AppCompatActivity() {
             else -> super.onOptionsItemSelected(item)
         }
     }
+
 
 }
