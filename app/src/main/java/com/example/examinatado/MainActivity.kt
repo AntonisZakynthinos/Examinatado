@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -14,11 +15,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        //scanButton.setOnClickListener {
+        val button: ImageButton = findViewById(R.id.imageButton)
+            
+       //scanButton.setOnClickListener {
           //  val intent = Intent("android.media.action.IMAGE_CAPTURE")
            //startActivity(intent)
         //}
     }
+
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.

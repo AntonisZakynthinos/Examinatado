@@ -47,10 +47,9 @@
 
         <Button
             android:id="@+id/scanButton"
-            android:layout_width="114dp"
-            android:layout_height="69dp"
-            android:layout_marginBottom="88dp"
-            android:backgroundTint="#1e90ff"
+            android:layout_width="194dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="24dp"
             android:text="Scan"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -67,69 +66,201 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="421dp"
+                    android:layout_height="wrap_content"
+                    android:background="#000000FF"
+                    android:gravity="bottom"
+                    android:isScrollContainer="true"
+                    android:src="@drawable/ic_brain"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="150dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="bottom|center"
+                    android:clickable="false"
+                    android:gravity="bottom"
+                    android:paddingBottom="20dp"
+                    android:text="Εγκέφαλος-Brain"
+                    android:textColor="#494747"
+                    android:textSize="36sp"
+                    android:textStyle="bold">
 
 
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="421dp"
-                android:layout_height="match_parent"
-                android:background="#000000FF"
-                android:src="@drawable/ic_brain"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="151dp" />
+                </TextView>
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#000000FF"
-                android:src="@drawable/ic_colon"
-                app:layout_anchor="@+id/imageButton"
-                app:layout_anchorGravity="center"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="151dp" />
+            </FrameLayout>
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#000000FF"
-                android:src="@drawable/ic_heart"
-                app:layout_anchor="@+id/imageButton"
-                app:layout_anchorGravity="center"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="151dp" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#000000FF"
-                android:src="@drawable/ic_liver"
-                app:layout_anchor="@+id/imageButton"
-                app:layout_anchorGravity="center"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="151dp" />
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="421dp"
+                    android:layout_height="wrap_content"
+                    android:background="#000000FF"
+                    android:gravity="bottom"
+                    android:isScrollContainer="true"
+                    android:src="@drawable/ic_colon"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="150dp" />
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#000000FF"
-                android:src="@drawable/ic_lungs"
-                app:layout_anchor="@+id/imageButton"
-                app:layout_anchorGravity="center"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="151dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="bottom|center"
+                    android:clickable="false"
+                    android:gravity="bottom"
+                    android:paddingBottom="20dp"
+                    android:text="Παχύ Έντερο-Colon"
+                    android:textColor="#494747"
+                    android:textSize="36sp"
+                    android:textStyle="bold">
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#000000FF"
-                android:src="@drawable/ic_small_intestine"
-                app:layout_anchor="@+id/imageButton"
-                app:layout_anchorGravity="center"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="151dp" />
+
+                </TextView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="421dp"
+                    android:layout_height="wrap_content"
+                    android:background="#000000FF"
+                    android:gravity="bottom"
+                    android:isScrollContainer="true"
+                    android:src="@drawable/ic_heart"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="150dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="bottom|center"
+                    android:clickable="false"
+                    android:gravity="bottom"
+                    android:paddingBottom="20dp"
+                    android:text="Καρδιά-Heart"
+                    android:textColor="#494747"
+                    android:textSize="36sp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="421dp"
+                    android:layout_height="wrap_content"
+                    android:background="#000000FF"
+                    android:gravity="bottom"
+                    android:isScrollContainer="true"
+                    android:src="@drawable/ic_liver"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="150dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="bottom|center"
+                    android:clickable="false"
+                    android:gravity="bottom"
+                    android:paddingBottom="20dp"
+                    android:text="Συκώτι-Liver"
+                    android:textColor="#494747"
+                    android:textSize="36sp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="421dp"
+                    android:layout_height="wrap_content"
+                    android:background="#000000FF"
+                    android:gravity="bottom"
+                    android:isScrollContainer="true"
+                    android:src="@drawable/ic_lungs"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="150dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="bottom|center"
+                    android:clickable="false"
+                    android:gravity="bottom"
+                    android:paddingBottom="20dp"
+                    android:text="Πνεύμονες-Lungs"
+                    android:textColor="#494747"
+                    android:textSize="36sp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    android:layout_width="421dp"
+                    android:layout_height="wrap_content"
+                    android:background="#000000FF"
+                    android:gravity="bottom"
+                    android:isScrollContainer="true"
+                    android:src="@drawable/ic_small_intestine"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="150dp" />
+
+                <TextView
+                    android:layout_width="421dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="bottom|center"
+                    android:clickable="false"
+                    android:gravity="bottom|center"
+                    android:lineSpacingMultiplier="0.5"
+                    android:paddingBottom="15dp"
+                    android:text=" Λεπτό Έντερο \n - \n Small Intestine"
+                    android:textColor="#494747"
+                    android:textSize="36sp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+            </FrameLayout>
         </LinearLayout>
-
     </HorizontalScrollView>
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
