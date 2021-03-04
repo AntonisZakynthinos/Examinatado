@@ -2,9 +2,11 @@ package com.example.examinatado
 
 import android.content.Context
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.os.Vibrator
 import android.os.VibrationEffect
+import android.provider.Settings
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -13,10 +15,10 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 
-@Suppress("DEPRECATION")
+
 class MainActivity : AppCompatActivity() {
 
-    val vibe = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+    //val vibe = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -26,42 +28,91 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
 
+
     }
 
     fun showTip(View: View)
     {
-        vibe.vibrate(80)
-        Toast.makeText(getApplicationContext(), "Brain Tip", Toast.LENGTH_LONG).show()
+        //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
+        //{
+        //    vibe.vibrate(VibrationEffect.createOneShot(80, VibrationEffect.DEFAULT_AMPLITUDE))
+        //}
+        //else
+        //{
+        //deprecated in API 26
+        //vibe.vibrate(80)
+        //}
+        Toast.makeText(applicationContext, "Brain Tip", Toast.LENGTH_LONG).show()
     }
 
     fun showTip1(view: View)
     {
-        vibe.vibrate(80)
-        Toast.makeText(getApplicationContext(), "Colon Tip", Toast.LENGTH_LONG).show()
+        //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
+        //{
+        //    vibe.vibrate(VibrationEffect.createOneShot(80, VibrationEffect.DEFAULT_AMPLITUDE))
+        //}
+        //else
+        //{
+        //deprecated in API 26
+        //vibe.vibrate(80)
+        //}
+        Toast.makeText(applicationContext, "Colon Tip", Toast.LENGTH_LONG).show()
     }
 
     fun showTip2(view: View)
     {
-        vibe.vibrate(80)
-        Toast.makeText(getApplicationContext(), "Heart Tip", Toast.LENGTH_LONG).show()
+        //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
+        //{
+        //    vibe.vibrate(VibrationEffect.createOneShot(80, VibrationEffect.DEFAULT_AMPLITUDE))
+        //}
+        //else
+        //{
+        //deprecated in API 26
+        //vibe.vibrate(80)
+        //}
+        Toast.makeText(applicationContext, "Heart Tip", Toast.LENGTH_LONG).show()
     }
 
     fun showTip4(view: View)
     {
-        vibe.vibrate(80)
-        Toast.makeText(getApplicationContext(), "Liver Tip", Toast.LENGTH_LONG).show()
+        //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
+        //{
+        //    vibe.vibrate(VibrationEffect.createOneShot(80, VibrationEffect.DEFAULT_AMPLITUDE))
+        //}
+        //else
+        //{
+        //deprecated in API 26
+        //vibe.vibrate(80)
+        //}
+        Toast.makeText(applicationContext, "Liver Tip", Toast.LENGTH_LONG).show()
     }
 
     fun showTip5(view: View)
     {
-        vibe.vibrate(80)
-        Toast.makeText(getApplicationContext(), "Lungs Tip", Toast.LENGTH_LONG).show()
+        //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
+        //{
+        //    vibe.vibrate(VibrationEffect.createOneShot(80, VibrationEffect.DEFAULT_AMPLITUDE))
+        //}
+        //else
+        //{
+        //deprecated in API 26
+        //vibe.vibrate(80)
+        //}
+        Toast.makeText(applicationContext, "Lungs Tip", Toast.LENGTH_LONG).show()
     }
 
     fun showTip6(view: View)
     {
-        vibe.vibrate(80)
-        Toast.makeText(getApplicationContext(), "Small Intestine Tip", Toast.LENGTH_LONG).show()
+        //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
+        //{
+        //    vibe.vibrate(VibrationEffect.createOneShot(80, VibrationEffect.DEFAULT_AMPLITUDE))
+        //}
+        //else
+        //{
+            //deprecated in API 26
+            //vibe.vibrate(80)
+        //}
+        Toast.makeText(applicationContext, "Small Intestine Tip", Toast.LENGTH_LONG).show()
     }
 
 

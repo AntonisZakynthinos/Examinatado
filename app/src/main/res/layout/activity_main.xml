@@ -79,9 +79,10 @@
                     android:layout_height="wrap_content"
                     android:background="#000000FF"
                     android:gravity="bottom"
+                    android:hapticFeedbackEnabled="true"
                     android:isScrollContainer="true"
-                    android:src="@drawable/ic_brain"
                     android:onClick="showTip"
+                    android:src="@drawable/ic_brain"
                     tools:layout_editor_absoluteX="0dp"
                     tools:layout_editor_absoluteY="150dp" />
 
