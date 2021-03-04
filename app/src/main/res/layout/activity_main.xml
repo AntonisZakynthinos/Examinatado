@@ -81,6 +81,7 @@
                     android:gravity="bottom"
                     android:isScrollContainer="true"
                     android:src="@drawable/ic_brain"
+                    android:onClick="showTip"
                     tools:layout_editor_absoluteX="0dp"
                     tools:layout_editor_absoluteY="150dp" />
 
@@ -113,6 +114,7 @@
                     android:gravity="bottom"
                     android:isScrollContainer="true"
                     android:src="@drawable/ic_colon"
+                    android:onClick="showTip1"
                     tools:layout_editor_absoluteX="0dp"
                     tools:layout_editor_absoluteY="150dp" />
 
@@ -145,6 +147,7 @@
                     android:gravity="bottom"
                     android:isScrollContainer="true"
                     android:src="@drawable/ic_heart"
+                    android:onClick="showTip2"
                     tools:layout_editor_absoluteX="0dp"
                     tools:layout_editor_absoluteY="150dp" />
 
@@ -177,6 +180,7 @@
                     android:gravity="bottom"
                     android:isScrollContainer="true"
                     android:src="@drawable/ic_liver"
+                    android:onClick="showTip4"
                     tools:layout_editor_absoluteX="0dp"
                     tools:layout_editor_absoluteY="150dp" />
 
@@ -209,6 +213,7 @@
                     android:gravity="bottom"
                     android:isScrollContainer="true"
                     android:src="@drawable/ic_lungs"
+                    android:onClick="showTip5"
                     tools:layout_editor_absoluteX="0dp"
                     tools:layout_editor_absoluteY="150dp" />
 
@@ -240,6 +245,7 @@
                     android:gravity="bottom"
                     android:isScrollContainer="true"
                     android:src="@drawable/ic_small_intestine"
+                    android:onClick="showTip6"
                     tools:layout_editor_absoluteX="0dp"
                     tools:layout_editor_absoluteY="150dp" />
 
