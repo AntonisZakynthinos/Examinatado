@@ -18,7 +18,6 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
-    //val vibe = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -31,88 +30,64 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    fun Context.vibrate(milliseconds:Long = 500){
+        val vibrator = this.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+
+        // Check whether device/hardware has a vibrator
+        val canVibrate:Boolean = vibrator.hasVibrator()
+
+        if(canVibrate){
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+                // void vibrate (VibrationEffect vibe)
+                vibrator.vibrate(
+                        VibrationEffect.createOneShot(
+                                milliseconds,
+                                // The default vibration strength of the device.
+                                VibrationEffect.DEFAULT_AMPLITUDE
+                        )
+                )
+            }else{
+                // This method was deprecated in API level 26
+                vibrator.vibrate(milliseconds)
+            }
+        }
+    }
+
+
     fun showTip(View: View)
     {
-        //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
-        //{
-        //    vibe.vibrate(VibrationEffect.createOneShot(80, VibrationEffect.DEFAULT_AMPLITUDE))
-        //}
-        //else
-        //{
-        //deprecated in API 26
-        //vibe.vibrate(80)
-        //}
-        Toast.makeText(applicationContext, "Brain Tip", Toast.LENGTH_LONG).show()
+        vibrate()
+        Toast.makeText(applicationContext, "Brain Tip", Toast.LENGTH_SHORT).show()
     }
 
     fun showTip1(view: View)
     {
-        //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
-        //{
-        //    vibe.vibrate(VibrationEffect.createOneShot(80, VibrationEffect.DEFAULT_AMPLITUDE))
-        //}
-        //else
-        //{
-        //deprecated in API 26
-        //vibe.vibrate(80)
-        //}
-        Toast.makeText(applicationContext, "Colon Tip", Toast.LENGTH_LONG).show()
+        vibrate()
+        Toast.makeText(applicationContext, "Colon Tip", Toast.LENGTH_SHORT).show()
     }
 
     fun showTip2(view: View)
     {
-        //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
-        //{
-        //    vibe.vibrate(VibrationEffect.createOneShot(80, VibrationEffect.DEFAULT_AMPLITUDE))
-        //}
-        //else
-        //{
-        //deprecated in API 26
-        //vibe.vibrate(80)
-        //}
-        Toast.makeText(applicationContext, "Heart Tip", Toast.LENGTH_LONG).show()
+        vibrate()
+        Toast.makeText(applicationContext, "Heart Tip", Toast.LENGTH_SHORT).show()
     }
 
     fun showTip4(view: View)
     {
-        //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
-        //{
-        //    vibe.vibrate(VibrationEffect.createOneShot(80, VibrationEffect.DEFAULT_AMPLITUDE))
-        //}
-        //else
-        //{
-        //deprecated in API 26
-        //vibe.vibrate(80)
-        //}
-        Toast.makeText(applicationContext, "Liver Tip", Toast.LENGTH_LONG).show()
+        vibrate()
+        Toast.makeText(applicationContext, "Liver Tip", Toast.LENGTH_SHORT).show()
     }
 
     fun showTip5(view: View)
     {
-        //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
-        //{
-        //    vibe.vibrate(VibrationEffect.createOneShot(80, VibrationEffect.DEFAULT_AMPLITUDE))
-        //}
-        //else
-        //{
-        //deprecated in API 26
-        //vibe.vibrate(80)
-        //}
-        Toast.makeText(applicationContext, "Lungs Tip", Toast.LENGTH_LONG).show()
+        vibrate()
+        Toast.makeText(applicationContext, "Lungs Tip", Toast.LENGTH_SHORT).show()
     }
 
     fun showTip6(view: View)
     {
-        //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
-        //{
-        //    vibe.vibrate(VibrationEffect.createOneShot(80, VibrationEffect.DEFAULT_AMPLITUDE))
-        //}
-        //else
-        //{
-            //deprecated in API 26
-            //vibe.vibrate(80)
-        //}
-        Toast.makeText(applicationContext, "Small Intestine Tip", Toast.LENGTH_LONG).show()
+        vibrate()
+        Toast.makeText(applicationContext, "Small Intestine Tip", Toast.LENGTH_SHORT).show()
     }
 
 
