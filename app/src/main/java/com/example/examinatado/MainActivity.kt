@@ -11,6 +11,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
@@ -22,11 +23,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         findViewById<Button>(R.id.scanButton).setOnClickListener {
-
             val i = Intent(applicationContext, ScanActivity::class.java)
             startActivity(i)
         }
-
+        findViewById<Button>(R.id.ReportsButton1).setOnClickListener{
+            val i = Intent(applicationContext, ReportsActivity::class.java)
+            startActivity(i)
+        }
+        findViewById<Button>(R.id.ProfileButton1).setOnClickListener {
+            startActivity(Intent(applicationContext, ProfileActivity::class.java))
+        }
 
     }
 
